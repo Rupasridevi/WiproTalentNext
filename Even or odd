@@ -1,0 +1,15 @@
+import java.util.*;
+class Student {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("enter the num");
+        int num = sc.nextInt();
+        if (num %2== 0) {
+            System.out.print("even");
+                    
+        }
+        else if (num%2!= 0) {
+            System.out.print("odd");
+        }
+    }
+}
