@@ -1,0 +1,23 @@
+import java.util.*;
+class Pattern {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int rem, num, fin = 0;
+        System.out.print("enter the number");
+        num = sc.nextInt();
+        int temp = num;
+        while (num > 0) {
+            rem = num % 10;
+            fin = rem + fin * 10;
+            num = num / 10;
+        }
+        System.out.println("revnum:" + fin);
+        if (temp == fin) {
+            System.out.println("palindrome");
+        } else {
+            System.out.println("not palindrome");
+        }
+
+    }
+}
+
