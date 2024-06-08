@@ -1,0 +1,14 @@
+import java.util.*;
+class Letters {
+    public static void main(String[] args) {
+        char ch = '0';
+        if (Character.isLetter(ch)) {
+            System.out.print("Alphabet");
+        }
+        if (Character.isDigit(ch)) {
+            System.out.print("Digit");
+        } else {
+            System.out.print("Symbol");
+        }
+    }
+}
