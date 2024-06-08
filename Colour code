@@ -1,0 +1,31 @@
+import java.util.*;
+class Letters {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the colour code");
+        char ch = sc.next().charAt(0);
+        switch (ch) {
+            case 'r':
+                System.out.print("Redcolour");
+                break;
+            case 'w':
+                System.out.print("White colour");
+                break;
+            case 'o':
+                System.out.print("Orange colour");
+                break;
+            case 'y':
+                System.out.print("Yellow colour");
+                break;
+            case 'b':
+                System.out.print("blue colour");
+                break;
+            default:
+                System.out.print("Invalid colour");
+        }
+        }
+    }
+
+
+
+
