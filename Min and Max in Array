@@ -1,0 +1,21 @@
+import java.util.*;
+class Min {
+    public static void main(String[] args) {
+        int a[] = {1, 2, 3, 4, 5};
+        int min = Integer.MAX_VALUE;
+        for (int num : a) {
+            if (num < min) {
+                min = num;
+            }
+        }
+        int max = Integer.MIN_VALUE;
+        for (int num:a) {
+            if (num > max) {
+                max = num;
+            }
+        }
+        System.out.println("max is "+max);
+        System.out.println("min is "+min);
+
+    }
+}
