@@ -1,0 +1,10 @@
+import java.util.*;
+class Java{
+    public static void main(String[] args){
+        int[] asciiValues = {67,78,68,79};
+        for(int  value : asciiValues){
+            System.out.print((char)value+ " ");
+        }
+        System.out.println();
+    }
+}
