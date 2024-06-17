@@ -1,0 +1,12 @@
+import java.util.*;
+class InitializeSortedArray {
+
+    public static void main(String[] args) {
+        int[] sortedArray = {71,102,83,94,57};
+        Arrays.sort(sortedArray);
+        System.out.println("Sorted Array:");
+        for (int number : sortedArray) {
+            System.out.print(number + " ");
+        }
+    }
+}
