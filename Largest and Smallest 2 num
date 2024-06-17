@@ -1,0 +1,26 @@
+class FindLargestSmallest {
+    public static void main(String[] args) {
+        int[] numbers = {55, 32, 45, 98, 82, 11, 9, 39, 50};
+        int largest1 = numbers[0];
+        int largest2 = numbers[1];
+        int smallest1 = numbers[0];
+        int smallest2 = numbers[1];
+        for (int i = 2; i < numbers.length; i++) {
+            if (numbers[i] > largest1) {
+                largest2 = largest1;
+                largest1 = numbers[i];
+            } else if (numbers[i] > largest2) {
+                largest2 = numbers[i];
+            }
+            if (numbers[i] < smallest1) {
+                smallest2 = smallest1;
+                smallest1 = numbers[i];
+            } else if (numbers[i] < smallest2) {
+                smallest2 = numbers[i];
+            }
+        }
+
+        System.out.println("Largest two numbers: " + largest1 + ", " + largest2);
+        System.out.println("Smallest two numbers: " + smallest1 + ", " + smallest2);
+    }
+}
