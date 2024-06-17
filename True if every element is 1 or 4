@@ -1,0 +1,16 @@
+class AllOneOrFour {
+    public static boolean allOneOrFour(int[] numbers) {
+        for (int number : numbers) {
+            if (number != 1 && number != 4) {
+                return false;
+            }
+        }
+        return true;
+    }
+    public static void main(String[] args) {
+        int[] arr1 = {1, 1, 4, 4};
+        int[] arr2 = {1, 2, 4};
+        System.out.println("Array 1: " + allOneOrFour(arr1));
+        System.out.println("Array 2: " + allOneOrFour(arr2));
+    }
+}
