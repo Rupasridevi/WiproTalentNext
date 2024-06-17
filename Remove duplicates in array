@@ -1,0 +1,14 @@
+import java.util.*;
+class RemoveDuplicatesHashSet {
+    public static void main(String[] args) {
+        int[] numbers = {55, 32, 45, 98, 82, 32, 11, 9, 39, 50};
+        Set<Integer> uniqueNumbers = new HashSet<>();
+        for (int number : numbers) {
+            uniqueNumbers.add(number);
+        }
+        System.out.println("Unique Numbers:");
+        for (int number : uniqueNumbers) {
+            System.out.print(number + " ");
+        }
+    }
+}
